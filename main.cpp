@@ -3,7 +3,15 @@
 
 using namespace std;
 
-
+class Image
+{
+public:
+	int X;
+	int Y;
+	int R;
+	int G;
+	int B;
+};
 
 //-----------------사과를 연상하며-------------
 ////Memory
