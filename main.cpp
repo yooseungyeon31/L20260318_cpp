@@ -1,17 +1,76 @@
 #include <iostream>
+#include "State.h"
 
 
 using namespace std;
 
-class Image
+int main()
 {
-public:
-	int X;
-	int Y;
-	int R;
-	int G;
-	int B;
-};
+	UState MyState;
+	cout << &MyState << endl;
+
+	return 0;
+}
+
+//클래스 만들기 구조 연습하기
+//----------------------------------
+
+//-----------------------------------------
+
+//class State
+//{
+//public:
+//	int ID;
+//	string StateName;
+//};
+//
+//class Transition
+//{
+//
+//public:
+//	int NowState;
+//	string Condition;
+//	int NextState;
+//};
+
+////무조건 만들어라..생성자와 소멸자를 클래스 만들 떄는 있어야한다. 
+//class A
+//{
+//public:
+//	A();
+//	~A();
+//};
+//
+//A::A()
+//{
+//
+//}
+//A::~A()
+//{
+//
+//}
+//
+//
+//
+////FSM이 State, Transition을 가지고 있다.
+////자연어로 말이 되야 한다.
+//
+//class FSM //상태머신
+//{
+//public:
+//	FSM() //일단 만들어라 무조건
+//	{
+//
+//	}
+//
+//	State States[4];
+//	Transition Transitions[5];
+//
+//};
+//
+
+
+
 
 //-----------------사과를 연상하며-------------
 ////Memory
@@ -46,20 +105,4 @@ public:
 //void Apple::Fall()
 //{
 //}
-//
-//
-//
-//
-//int main()
-//{
-//	Apple MyApple;
-//
-//	MyApple.GrowUp();
-//
-//
-//	return 0;
-//}
-//
-//
-//
-
+//-------------------------------------
